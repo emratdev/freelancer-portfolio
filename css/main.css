@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    min-width: 1230px;
+    max-width: 1230px;
     padding: 0 30px;
     margin: 0  auto;
 }
@@ -30,7 +30,7 @@ body {
     transition: background-color 0.2s ease-in, top 0.2s ease-in;
  }
 
- .button:hover, .btn:focus {
+ .button:hover, .button:focus {
     background-color: #2f2f30;
  }
 
@@ -87,7 +87,10 @@ body {
     column-gap: 50px;
     font-weight: 500;
     font-size: 14px; 
+}
 
+.nav__button {
+    display: none;
 }
 
 .nav__link {
@@ -98,6 +101,8 @@ body {
 .nav__link.active {
      color: #606060;
 }
+
+
 
 
 /* Header Content */
@@ -133,7 +138,14 @@ body {
 .services__row {
     display: flex;
     column-gap: 30px;
+    row-gap: 60px;
+    flex-wrap: wrap ;
 
+}
+
+.service__card {
+    flex: 1 1 0;
+    min-width: 315px;
 }
 
 .service__card_img {
@@ -222,7 +234,7 @@ body {
 
  
 
- .contracts__social {
+ .contacts__social {
     display: flex;
     justify-content: center;
     column-gap: 60px;
